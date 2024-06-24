@@ -90,7 +90,7 @@ if submit:
         df_mentah['stem'] = (df_mentah['stopword'].astype(str)).apply(stemming)
         # st.write(df_mentah['stem'])
 
-        path_tfidf = 'Model/tfidf.pkl'
+        path_tfidf = 'model/tfidf.pkl'
         with open(path_tfidf, 'rb') as f:
             tfidf = pickle.load(f)
 
@@ -100,7 +100,7 @@ if submit:
         # st.write(df_result)
 
         #load model
-        path_svm = 'Model/UjiCoba2_SVMSMOTE k3 C10.pkl'
+        path_svm = 'model/UjiCoba2_SVMSMOTE k3 C10.pkl'
         with open (path_svm, 'rb') as f:
             svm_model = pickle.load(f)
 
